@@ -2,3 +2,4 @@ D:\Projects\Capturador\Entidad\bin\Debug\Entidad.dll
 D:\Projects\Capturador\Entidad\bin\Debug\Entidad.pdb
 D:\Projects\Capturador\Entidad\obj\Debug\Entidad.dll
 D:\Projects\Capturador\Entidad\obj\Debug\Entidad.pdb
+D:\Projects\Capturador\Entidad\obj\Debug\Entidad.csprojResolveAssemblyReference.cache

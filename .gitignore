@@ -1,5 +1,8 @@
-AccesoDatos/0ConectDB.cs
-Presentacion/bin/
+/AccesoDatos/0ConectDB.cs
+/Presentacion/bin
+/Presentacion/obj
+/AccesoDatos/bin
+/AccesoDatos/obj
 *.img
 *.dll
 *.exe

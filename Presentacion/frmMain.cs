@@ -11,17 +11,20 @@ using System.Diagnostics;
 using System.Runtime.InteropServices;
 using AccesoDatos;
 using System.Data.SqlClient;
+using Chronos;
 
 namespace Presentacion
 {
     public partial class frmMain : Form
     {
+        public int tiempoProrroga = 300; //valor en segundos
         public string textoEscrito = "", textoNuevo = "", posicionActual = "", posicionNueva = "", programas = "", flag = "";
         public int numerodeveces = 0, reloj = 1, prorroga = 1;
 
         public frmMain()
         {
             InitializeComponent();
+            lblUsuario.Text = System.Environment.UserName;
         }
 
         
@@ -54,7 +57,7 @@ namespace Presentacion
             {
                 prorroga = prorroga + 1;
                 lblFlag.Text = prorroga.ToString();
-                if (prorroga < 60)
+                if (prorroga < tiempoProrroga)
                 {
                     numerodeveces = numerodeveces + 1;
                     lbltime.Text = numerodeveces.ToString();
@@ -76,6 +79,7 @@ namespace Presentacion
         {
             textBox1.Text += ((char)e.KeyValue).ToString();
             txtsololetras.Text += ((char)e.KeyValue).ToString();
+
         }
 
         void stop()
@@ -112,7 +116,7 @@ namespace Presentacion
 
         void guardar()
         {
-            DateTime fecha = DateTime.Now;
+            /*DateTime fecha = DateTime.Now;
 
             string nombrepc = System.Environment.MachineName;
             string tiempoCronometrado = lblReloj.Text;
@@ -146,7 +150,7 @@ namespace Presentacion
             SqlCommand cmd = new SqlCommand(INSERT, conn.cn);
             dtr = cmd.ExecuteReader();
             dtr.Read();
-            conn.cn.Close();
+            conn.cn.Close();*/
         }
 
         private void frmMain_FormClosing(object sender, FormClosingEventArgs e)
@@ -157,7 +161,6 @@ namespace Presentacion
         private void timer1_Tick(object sender, EventArgs e)
         {
             verificarEscrito();
-
         }
 
 
@@ -253,36 +256,6 @@ namespace Presentacion
 
             //txtProgramas.Text += appProcessName.ToString(); //+ " | " + appExePath + " | " + appExeName;
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         private void timerMouse1_Tick(object sender, EventArgs e)

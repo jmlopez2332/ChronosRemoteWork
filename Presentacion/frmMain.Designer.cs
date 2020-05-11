@@ -43,6 +43,7 @@
             this.timerReloj = new System.Windows.Forms.Timer(this.components);
             this.txtsololetras = new System.Windows.Forms.TextBox();
             this.lblFlag = new System.Windows.Forms.Label();
+            this.lblUsuario = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnDetener
@@ -86,7 +87,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(396, 78);
             this.textBox1.TabIndex = 7;
-            this.textBox1.Visible = false;
             // 
             // lbltime
             // 
@@ -97,7 +97,6 @@
             this.lbltime.Size = new System.Drawing.Size(94, 32);
             this.lbltime.TabIndex = 8;
             this.lbltime.Text = "00:00";
-            this.lbltime.Visible = false;
             // 
             // timer1
             // 
@@ -121,7 +120,6 @@
             this.txtProgramas.Name = "txtProgramas";
             this.txtProgramas.Size = new System.Drawing.Size(406, 99);
             this.txtProgramas.TabIndex = 9;
-            this.txtProgramas.Visible = false;
             // 
             // lblReloj
             // 
@@ -146,7 +144,6 @@
             this.txtsololetras.Name = "txtsololetras";
             this.txtsololetras.Size = new System.Drawing.Size(406, 73);
             this.txtsololetras.TabIndex = 11;
-            this.txtsololetras.Visible = false;
             // 
             // lblFlag
             // 
@@ -156,13 +153,22 @@
             this.lblFlag.Size = new System.Drawing.Size(37, 13);
             this.lblFlag.TabIndex = 12;
             this.lblFlag.Text = "lblFlag";
-            this.lblFlag.Visible = false;
+            // 
+            // lblUsuario
+            // 
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.Location = new System.Drawing.Point(485, 381);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(35, 13);
+            this.lblUsuario.TabIndex = 13;
+            this.lblUsuario.Text = "label2";
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(465, 265);
+            this.ClientSize = new System.Drawing.Size(1064, 460);
+            this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.lblFlag);
             this.Controls.Add(this.txtsololetras);
             this.Controls.Add(this.lblReloj);
@@ -177,7 +183,7 @@
             this.MaximizeBox = false;
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "CHRONOS V2.1 (BETA)";
+            this.Text = "CHRONOS V3.1 (BETA)";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_FormClosing);
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.ResumeLayout(false);
@@ -200,5 +206,6 @@
         private System.Windows.Forms.Timer timerReloj;
         private System.Windows.Forms.TextBox txtsololetras;
         private System.Windows.Forms.Label lblFlag;
+        private System.Windows.Forms.Label lblUsuario;
     }
 }
