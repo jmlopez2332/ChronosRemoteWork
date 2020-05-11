@@ -118,7 +118,7 @@ namespace Presentacion
 
         void guardar()
         {
-            /*DateTime fecha = DateTime.Now;
+            DateTime fecha = DateTime.Now;
 
             string nombrepc = System.Environment.MachineName;
             string tiempoCronometrado = lblReloj.Text;
@@ -154,7 +154,7 @@ namespace Presentacion
             SqlCommand cmd = new SqlCommand(INSERT, conn.cn);
             dtr = cmd.ExecuteReader();
             dtr.Read();
-            conn.cn.Close();*/
+            conn.cn.Close();
         }
 
         private void frmMain_FormClosing(object sender, FormClosingEventArgs e)
