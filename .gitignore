@@ -9,6 +9,7 @@
 /Negocio/obj
 /Negocio/bin
 /WindowsFormsApplication1
+/BaseProgram
 *.suo
 *.img
 *.dll
