@@ -1,2 +1,5 @@
-/AccesoDatos/0ConectDB.cs
+AccesoDatos/0ConectDB.cs
+Presentacion/bin/
 *.img
+*.dll
+*.exe
