@@ -243,9 +243,10 @@ namespace Presentacion
                 }
                 else
                 {
+                    DateTime fecha = DateTime.Now;
                     //txtProgramas.Text = "";
                     txtsololetras.Text += " | ";
-                    txtsololetras.Text += appProcessName.ToString();
+                    txtsololetras.Text += "new_line: " + fecha.ToLongTimeString().ToString() + " - " + appProcessName.ToString();
                     txtsololetras.Text += " ";
                     flag = appProcessName.ToString();
                 }

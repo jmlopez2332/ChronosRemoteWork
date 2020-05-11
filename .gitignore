@@ -3,6 +3,10 @@
 /Presentacion/obj
 /AccesoDatos/bin
 /AccesoDatos/obj
+/Negocio/obj
+/Negocio/bin
+*.suo
 *.img
 *.dll
 *.exe
+*.cache

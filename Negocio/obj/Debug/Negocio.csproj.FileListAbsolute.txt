@@ -1,9 +1,0 @@
-D:\Projects\Capturador\Negocio\bin\Debug\Negocio.dll
-D:\Projects\Capturador\Negocio\bin\Debug\Negocio.pdb
-D:\Projects\Capturador\Negocio\bin\Debug\AccesoDatos.dll
-D:\Projects\Capturador\Negocio\bin\Debug\Entidad.dll
-D:\Projects\Capturador\Negocio\bin\Debug\AccesoDatos.pdb
-D:\Projects\Capturador\Negocio\bin\Debug\Entidad.pdb
-D:\Projects\Capturador\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
-D:\Projects\Capturador\Negocio\obj\Debug\Negocio.dll
-D:\Projects\Capturador\Negocio\obj\Debug\Negocio.pdb
