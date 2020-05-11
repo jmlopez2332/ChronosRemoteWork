@@ -140,7 +140,9 @@ namespace Presentacion
                             "     ,TIEMPO_CRONOMETRADO "+
                             "     ,TIEMPO_REAL "+
                             "     ,PROGRAMAS_UTILIZADOS "+
-                            "     ,EVENTOS_CAPTURADOR "+
+                            "     ,EVENTOS_CAPTURADOR " +
+                            "     ,HORA_INICIO " +
+                            "     ,USUARIO " +
                             "   ) VALUES ( "+
                             "      '"+fechaActual+"'  "+
                             "     ,'"+nombrepc+"'  "+

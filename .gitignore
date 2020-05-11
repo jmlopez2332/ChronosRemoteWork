@@ -1,10 +1,14 @@
 /AccesoDatos/0ConectDB.cs
+/Presentacion/Properties
+/AccesoDatos/Properties
+/Negocio/Properties
 /Presentacion/bin
 /Presentacion/obj
 /AccesoDatos/bin
 /AccesoDatos/obj
 /Negocio/obj
 /Negocio/bin
+/WindowsFormsApplication1
 *.suo
 *.img
 *.dll
