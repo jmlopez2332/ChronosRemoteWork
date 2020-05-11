@@ -44,6 +44,7 @@
             this.txtsololetras = new System.Windows.Forms.TextBox();
             this.lblFlag = new System.Windows.Forms.Label();
             this.lblUsuario = new System.Windows.Forms.Label();
+            this.lblInicio = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnDetener
@@ -163,11 +164,21 @@
             this.lblUsuario.TabIndex = 13;
             this.lblUsuario.Text = "label2";
             // 
+            // lblInicio
+            // 
+            this.lblInicio.AutoSize = true;
+            this.lblInicio.Location = new System.Drawing.Point(485, 421);
+            this.lblInicio.Name = "lblInicio";
+            this.lblInicio.Size = new System.Drawing.Size(35, 13);
+            this.lblInicio.TabIndex = 14;
+            this.lblInicio.Text = "label2";
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1064, 460);
+            this.ClientSize = new System.Drawing.Size(464, 260);
+            this.Controls.Add(this.lblInicio);
             this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.lblFlag);
             this.Controls.Add(this.txtsololetras);
@@ -207,5 +218,6 @@
         private System.Windows.Forms.TextBox txtsololetras;
         private System.Windows.Forms.Label lblFlag;
         private System.Windows.Forms.Label lblUsuario;
+        private System.Windows.Forms.Label lblInicio;
     }
 }

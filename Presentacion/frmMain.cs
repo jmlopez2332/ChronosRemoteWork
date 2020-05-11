@@ -30,6 +30,8 @@ namespace Presentacion
         
         private void btnIniciar_Click(object sender, EventArgs e)
         {
+
+            lblInicio.Text = (DateTime.Now).ToString();
             btnIniciar.Enabled = false;
             btnDetener.Enabled = true;
             timer1.Enabled = true;
@@ -146,6 +148,8 @@ namespace Presentacion
                             "     ,'"+tiemporeal+"'   "+
                             "     ,'"+programas+"'   "+
                             "     ,'" + capturador + "'   " +
+                            "     ,'" + lblInicio.Text + "'   " +
+                            "     ,'" + lblUsuario.Text + "'   " +
                             "   )";
             SqlCommand cmd = new SqlCommand(INSERT, conn.cn);
             dtr = cmd.ExecuteReader();
@@ -275,5 +279,6 @@ namespace Presentacion
             int numero = reloj++;
             lblReloj.Text = numero.ToString() + " (segundos)"; 
         }
+
     }
 }
