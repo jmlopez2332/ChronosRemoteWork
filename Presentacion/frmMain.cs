@@ -25,6 +25,7 @@ namespace Presentacion
         {
             InitializeComponent();
             lblUsuario.Text = System.Environment.UserName;
+           
         }
 
         
@@ -280,6 +281,11 @@ namespace Presentacion
         {
             int numero = reloj++;
             lblReloj.Text = numero.ToString() + " (segundos)"; 
+        }
+
+        private void timerClean_Tick(object sender, EventArgs e)
+        {
+            textBox1.Text = "";
         }
 
     }

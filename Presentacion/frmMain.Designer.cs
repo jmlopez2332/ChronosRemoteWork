@@ -45,6 +45,7 @@
             this.lblFlag = new System.Windows.Forms.Label();
             this.lblUsuario = new System.Windows.Forms.Label();
             this.lblInicio = new System.Windows.Forms.Label();
+            this.timerClean = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // btnDetener
@@ -173,11 +174,17 @@
             this.lblInicio.TabIndex = 14;
             this.lblInicio.Text = "label2";
             // 
+            // timerClean
+            // 
+            this.timerClean.Enabled = true;
+            this.timerClean.Interval = 240000;
+            this.timerClean.Tick += new System.EventHandler(this.timerClean_Tick);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(954, 455);
+            this.ClientSize = new System.Drawing.Size(432, 240);
             this.Controls.Add(this.lblInicio);
             this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.lblFlag);
@@ -194,7 +201,7 @@
             this.MaximizeBox = false;
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "CHRONOS V3.1 (BETA)";
+            this.Text = "CHRONOS V3.5 (BETA)";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_FormClosing);
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.ResumeLayout(false);
@@ -219,5 +226,6 @@
         private System.Windows.Forms.Label lblFlag;
         private System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.Label lblInicio;
+        private System.Windows.Forms.Timer timerClean;
     }
 }
